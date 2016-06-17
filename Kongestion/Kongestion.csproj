@@ -24,12 +24,30 @@
   <ItemGroup>
     <Content Include="app.css" />
     <Content Include="index.html" />
+    <Content Include="Scripts\angular\angular-mocks.js" />
+    <Content Include="Scripts\angular\angular.js" />
+    <Content Include="Scripts\angular\angular.min.js" />
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app.ts" />
+    <TypeScriptCompile Include="Scripts\game\buildings.ts" />
+    <TypeScriptCompile Include="Scripts\game\business.ts" />
+    <TypeScriptCompile Include="Scripts\game\housing.ts" />
+    <TypeScriptCompile Include="Scripts\game\people.ts" />
+    <TypeScriptCompile Include="Scripts\typings\angularjs\angular-animate.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\angularjs\angular-component-router.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\angularjs\angular-cookies.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\angularjs\angular-mocks.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\angularjs\angular-resource.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\angularjs\angular-route.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\angularjs\angular-sanitize.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\angularjs\angular.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\jquery\jquery.d.ts" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="packages.config" />
+    <Content Include="Scripts\angular\angular.min.js.map" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>

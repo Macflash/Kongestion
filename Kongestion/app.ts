@@ -1,28 +1,25 @@
-﻿class Greeter {
-    element: HTMLElement;
-    span: HTMLElement;
-    timerToken: number;
+﻿var kongestion = angular.module('kongestion', []);
 
-    constructor(element: HTMLElement) {
-        this.element = element;
-        this.element.innerHTML += "The time is: ";
-        this.span = document.createElement('span');
-        this.element.appendChild(this.span);
-        this.span.innerText = new Date().toUTCString();
+class City {
+    name: string; // again shits and giggles man
+    People: Person[];
+    Places: Building[];
+    Businesses: Business[];
+    Housing: HousingComplex[];
+    Money: number; // idk, taxes or something
+
+    public static $inject = ["$scope"];
+    constructor($scope: any) {
+        this.name = "Barnabus";
+        this.Money = 60;
     }
-
-    start() {
-        this.timerToken = setInterval(() => this.span.innerHTML = new Date().toUTCString(), 500);
-    }
-
-    stop() {
-        clearTimeout(this.timerToken);
-    }
-
 }
 
-window.onload = () => {
-    var el = document.getElementById('content');
-    var greeter = new Greeter(el);
-    greeter.start();
-};
+//kongestion.controller("CityController", City);
+
+kongestion.component("city", {
+    controller: City,
+    bindings: {
+    },
+    template: '<div>waddup {{$ctrl.name}}, you got ${{$ctrl.Money}} </div>'
+});
