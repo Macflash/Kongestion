@@ -1,7 +1,36 @@
 ﻿body {
     font-family: 'Segoe UI', sans-serif;
+    width: 100%;
 }
 
 span {
     font-style: italic;
+}
+
+.Item {
+    padding: 10px;
+    outline: 2px solid grey;
+}
+
+.Items {
+
+}
+
+.Categories {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.Category {
+    padding: 10px;
+    outline: 2px solid grey;
+    width: 200px;
+    display: block;
+}
+
+.CloseButton {
+    top: 0;
+    right: 0;
+    left: auto;
 }
