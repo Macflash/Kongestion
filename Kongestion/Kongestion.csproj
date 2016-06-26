@@ -33,8 +33,11 @@
     <TypeScriptCompile Include="app.ts" />
     <TypeScriptCompile Include="Scripts\game\buildings.ts" />
     <TypeScriptCompile Include="Scripts\game\business.ts" />
+    <TypeScriptCompile Include="Scripts\game\city.ts" />
+    <TypeScriptCompile Include="Scripts\game\grid.ts" />
     <TypeScriptCompile Include="Scripts\game\housing.ts" />
     <TypeScriptCompile Include="Scripts\game\people.ts" />
+    <TypeScriptCompile Include="Scripts\game\roads.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-animate.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-component-router.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-cookies.d.ts" />
@@ -44,6 +47,7 @@
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-sanitize.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\jquery\jquery.d.ts" />
+    <TypeScriptCompile Include="Scripts\game\worker.ts" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -55,6 +59,7 @@
       <DependentUpon>web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
   </PropertyGroup>
